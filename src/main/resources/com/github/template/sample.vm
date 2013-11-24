@@ -8,14 +8,16 @@
 <ul>
 #foreach($i in [1..$count])
  <li>
+  <table>
 #set($start = $i*$size - $size)
 #set($end = $i*$size)
 #if($end > $columns.size())
 #set($end = $columns.size())
 #end
 #foreach ($column in $columns.subList($start, $end))
-<tr><td>hellomacro $column $pages</td></tr>
+<tr><td>hellomacro $column $i</td></tr>
 #end
+  </table>
  </li>
 #end
 </ul>
@@ -28,4 +30,4 @@
 #end
 </table>
 
-#genarateTable($columns 4)
+#genarateTable($columns 3)
