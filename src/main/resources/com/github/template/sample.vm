@@ -1,0 +1,31 @@
+#macro( genarateTable $columns $size)
+#set($count=$columns.size() / $size)
+#if ($columns.size() % $size != 0)
+#set($count = $count+1)
+#end
+
+<div class="pages">
+<ul>
+#foreach($i in [1..$count])
+ <li>
+#set($start = $i*$size - $size)
+#set($end = $i*$size)
+#if($end > $columns.size())
+#set($end = $columns.size())
+#end
+#foreach ($column in $columns.subList($start, $end))
+<tr><td>hellomacro $column $pages</td></tr>
+#end
+ </li>
+#end
+</ul>
+</div>
+#end
+
+<table>
+#foreach ($column in $columns)
+<tr><td>hello $column</td></tr>
+#end
+</table>
+
+#genarateTable($columns 4)

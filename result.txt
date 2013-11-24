@@ -1,0 +1,35 @@
+
+<table>
+<tr><td>hello 1</td></tr>
+<tr><td>hello 2</td></tr>
+<tr><td>hello 3</td></tr>
+<tr><td>hello 4</td></tr>
+<tr><td>hello 5</td></tr>
+<tr><td>hello 6</td></tr>
+<tr><td>hello 7</td></tr>
+<tr><td>hello 8</td></tr>
+<tr><td>hello 9</td></tr>
+<tr><td>hello 10</td></tr>
+</table>
+
+
+<div class="pages">
+<ul>
+ <li>
+<tr><td>hellomacro 1 $pages</td></tr>
+<tr><td>hellomacro 2 $pages</td></tr>
+<tr><td>hellomacro 3 $pages</td></tr>
+<tr><td>hellomacro 4 $pages</td></tr>
+ </li>
+ <li>
+<tr><td>hellomacro 5 $pages</td></tr>
+<tr><td>hellomacro 6 $pages</td></tr>
+<tr><td>hellomacro 7 $pages</td></tr>
+<tr><td>hellomacro 8 $pages</td></tr>
+ </li>
+ <li>
+<tr><td>hellomacro 9 $pages</td></tr>
+<tr><td>hellomacro 10 $pages</td></tr>
+ </li>
+</ul>
+</div>
