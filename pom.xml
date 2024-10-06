@@ -16,8 +16,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.8</source>
+          <target>1.8</target>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
@@ -80,12 +80,10 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.0</version>
-          <configuration>
-            <reportPlugins>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
@@ -135,11 +133,8 @@
         <artifactId>taglist-maven-plugin</artifactId>
         <version>2.0</version>
       </plugin>
-            </reportPlugins>
-          </configuration>
-        </plugin>
     </plugins>
-  </build>
+  </reporting>
   <dependencies>
 <dependency>
     <groupId>org.apache.velocity</groupId>
